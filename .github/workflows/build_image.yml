@@ -2,6 +2,9 @@ name: build docker image
 
 on: push
 
+permissions:
+  packages: write
+
 env:
   DOCKER_REPO: ghcr.io/jonohill/docker-multirun
 
