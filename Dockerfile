@@ -17,7 +17,7 @@ RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
         echo "Unsupported architecture: $TARGETPLATFORM"; \
         exit 1; \
     fi && \
-    curl -fsSL -o multirun.tar.gz "https://github.com/nicolas-van/multirun/releases/download/${MULTIRUN_VERSION}/multirun-aarch64-linux-gnu-${MULTIRUN_VERSION}.tar.gz" && \
+    curl -fsSL -o multirun.tar.gz "https://github.com/nicolas-van/multirun/releases/download/${MULTIRUN_VERSION}/multirun-${ARCH}-linux-gnu-${MULTIRUN_VERSION}.tar.gz" && \
     tar xzf multirun.tar.gz
 
 FROM scratch
