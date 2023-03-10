@@ -3,7 +3,7 @@ FROM curlimages/curl
 # renovate: datasource=github-releases depName=nicolas-van/multirun
 ARG MULTIRUN_VERSION=1.1.3
 
-ARG TARGETPLATFORM=linux/amd64
+ARG TARGETPLATFORM
 
 WORKDIR /tmp
 
